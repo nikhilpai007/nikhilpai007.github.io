@@ -220,7 +220,7 @@ input, select, textarea {
 		transform: translate3d(0,0,0);
 	/* Set your background with this */
 
-		background: #bda257 url("images/dubai.png") bottom left;
+		background: url("images/bg1.jpg"), url("images/bg.jpg") bottom left;
 		background-repeat: repeat-x;
 		height: 100%;
 		left: 0;
@@ -228,6 +228,60 @@ input, select, textarea {
 		position: fixed;
 		top: 0;
 	}
+
+	/*Navigation bar */
+	#menu-nav {
+		max-width: 900px;
+		margin: auto;
+		background-color: azure;
+		border-radius: 4px;
+		box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+	}
+	#navigation-bar ul {
+		border-radius: 2px;
+		overflow: hidden;
+	  }
+	  #navigation-bar li {
+		float: left;
+		width: 20%;
+	  }
+	  #navigation-bar li:hover a::before {
+		right: 0;
+		left: 0;
+	  }
+	  #navigation-bar a {
+		color: #848484;
+		font-size: 20px;
+		text-decoration: none;
+		text-align: center;
+		padding: 20px 0;
+		display: block;
+		position: relative;
+		transition: all 0.3s ease;
+	  }
+	  #navigation-bar a:hover {
+		color: #000;
+	  }
+	  #navigation-bar a::before {
+		content: "  ";
+		transition: all 0.4s ease-in-out;
+		position: a;
+		right: 50%;
+		left: 50%;
+		bottom: 0;
+		height: 2px;
+		background-color: #e74c3c;
+	  }
+	  #navigation-bar a:hover::before {
+		right: 0;
+		left: 0;
+	  }
+	   
+	  li {
+		  list-style: none;
+	  }
+
 
 	@-moz-keyframes bg {
 		0% {
@@ -548,6 +602,7 @@ input, select, textarea {
 	}
 
 		#header h1 {
+			color: black;
 			font-size: 4.35em;
 			font-weight: 900;
 			letter-spacing: -0.035em;
@@ -555,7 +610,8 @@ input, select, textarea {
 		}
 
 		#header p {
-			font-size: 1.75.00em;
+			color: black;
+			font-size: 1.75em;
 			margin: 0.75em 0 0.25em 0;
 			opacity: 0.75;
 		}
@@ -669,7 +725,7 @@ input, select, textarea {
 					-ms-transition: all 0.2s ease-in-out;
 					transition: all 0.2s ease-in-out;
 					border-radius: 100%;
-					border: solid 1px #fff;
+					border: solid 1px rgb(20, 20, 20);
 					display: block;
 					font-size: 2.0em;
 					height: 2.5em;
@@ -686,7 +742,7 @@ input, select, textarea {
 
 					#header nav a:hover:before {
 						background-color: rgba(255, 255, 255, 0.175);
-						color: #fff;
+						color: rgb(20, 20, 20);
 					}
 
 				#header nav a:active {
@@ -696,7 +752,7 @@ input, select, textarea {
 
 					#header nav a:active:before {
 						background-color: rgba(255, 255, 255, 0.35);
-						color: #fff;
+						color: rgb(20, 20, 20);
 					}
 
 				#header nav a span {
